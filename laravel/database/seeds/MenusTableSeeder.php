@@ -191,7 +191,7 @@ class MenusTableSeeder extends Seeder
         $this->endDropdown();
         $this->insertLink('guest,user,admin', 'Download CoreUI', 'https://coreui.io', 'cil-cloud-download');
         $this->insertLink('guest,user,admin', 'Try CoreUI PRO', 'https://coreui.io/pro/', 'cil-layers');
-
+        
         /* Create top menu */
         DB::table('menulist')->insert([
             'name' => 'top_menu'
@@ -208,6 +208,7 @@ class MenusTableSeeder extends Seeder
             $this->insertLink('admin', 'Media',                   '/media');
             $this->insertLink('admin', 'BREAD',                   '/bread');
             $this->insertLink('admin', 'E-mail',                  '/email');
+            $this->insertLink('admin', 'Sofware',            '/software');  
         $this->endDropdown();
 
         $this->joinAllByTransaction(); ///   <===== Must by use on end of this seeder

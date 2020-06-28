@@ -48,13 +48,18 @@ return [
             'root' => storage_path('app'),
         ],
 
+       
         'public' => [
             'driver' => 'local',
-            'root' => public_path('public'),
-            'url' => env('APP_URL').'/public',
+            'root' => storage_path('app/public'),
+            'url' => env('APP_URL').'/storage',
             'visibility' => 'public',
         ],
-
+         
+        'links' => [
+            public_path('storage') => storage_path('app/public'),
+            public_path('imagenes_software') => storage_path('app/public/storage/imagenes_software'),
+        ],
         's3' => [
             'driver' => 's3',
             'key' => env('AWS_ACCESS_KEY_ID'),

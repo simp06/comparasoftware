@@ -63,7 +63,11 @@ const Notes = () => import('@/views/notes/Notes')
 const Note = () => import('@/views/notes/Note')
 const EditNote = () => import('@/views/notes/EditNote')
 const CreateNote = () => import('@/views/notes/CreateNote')
-
+//Software
+const Softwares = () => import('@/views/software/Softwares')
+const Software = () => import('@/views/software/Software')
+const EditSoftware = () => import('@/views/software/EditSoftware')
+const CreateSoftware = () => import('@/views/software/CreateSoftware')
 //Roles
 const Roles = () => import('@/views/roles/Roles')
 const Role = () => import('@/views/roles/Role')
@@ -273,6 +277,37 @@ function configRoutes () {
               meta: { label: 'Edit Note' },
               name: 'Edit Note',
               component: EditNote
+            },
+          ]
+        },
+        {
+          path: 'software',
+          meta: { label: 'Softwares'},
+          component: {
+            render (c) { return c('router-view') }
+          },
+          children: [
+            {
+              path: '',
+              component: Softwares,
+            },
+            {
+              path: 'create',
+              meta: { label: 'Create Sotware' },
+              name: 'Create Software',
+              component: CreateSoftware
+            },
+            {
+              path: ':id',
+              meta: { label: 'Software details'},
+              name: 'Software',
+              component: Software,
+            },
+            {
+              path: ':id/edit',
+              meta: { label: 'Edit Software' },
+              name: 'Edit Software',
+              component: EditSoftware
             },
           ]
         },
