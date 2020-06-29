@@ -15,6 +15,7 @@
           </CAlert>
             <CInput label="Nombre" type="text" placeholder="Nombre" v-model="software.nombre"></CInput>
             <CInput label="Descripcion" type="text" placeholder="Descripcion" v-model="software.descripcion"></CInput>
+            <CInput label="Url del sitio" type="text" placeholder="Sitio" v-model="software.url"></CInput>
              <h4>Asignar Lenguajes:</h4>
               <CInputCheckbox
                 v-for="(lenguaje,index) in lenguajes"
@@ -34,13 +35,11 @@
                 placeholder="NuevaImagen"
                 v-on:change="onFileChange"
             />
-             <div class="c-avatar">
             <img
               label="Preview"
               v-if="software.imagen" :src="software.imagen"
               class="c-avatar-img "
             />
-             </div>
           <CButton color="primary" @click="store()">Create</CButton>
           <CButton color="primary" @click="goBack">Back</CButton>
         </CCardBody>
@@ -67,6 +66,7 @@ export default {
           imagen: '',
           lenguaje: [],
           funcionalidad: [],
+          url: '',
         },
         lenguajes: [],
         funcionalidades: [],
@@ -140,9 +140,12 @@ export default {
               nombre: '',
               descripcion: '',
               imagen: '',
+              url: '',
               lenguaje: [],
               funcionalidad: []
             };
+            self.funcionalidades=[];
+            self.lenguajes=[];
             //Recibo el id del software para subir la imagen 
             self.uploadImage(response.data.id);
             self.message = 'Software creado correctamente';

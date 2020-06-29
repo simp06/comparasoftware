@@ -19,6 +19,7 @@ class CreateSoftwareTable extends Migration
             $table->string('nombre')->nullable();
             $table->string('imagen')->nullable();
             $table->string('descripcion')->nullable();
+            $table->string('url')->nullable();
             $table->softDeletes();
         });
     }

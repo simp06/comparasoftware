@@ -4,9 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
-use App\Models\Software;
 use Illuminate\Support\Facades\Storage;
 use App\Http\Controllers\File;
+use App\Models\Software;
 use App\Models\Lenguaje;
 use App\Models\LenguajeSoftware;
 use App\Models\Funcionalidad;
@@ -51,18 +51,14 @@ class SoftwareController extends Controller
         $funcionalidades = Funcionalidad::all()->pluck('nombre', 'id');
         return response()->json([
             'lenguajes' => $lenguajes,
-            'funcionalidades' => $funcionalidades,
-            #'lenguaje' => Form::find($id),
-            #'formFields' => FormField::where('form_id', '=', $id)->get(),
-            #'options' => $formService->getFormOptions(),
-            #'roles'   => $rolesService->get(),
-            #'formRoles' => $formService->getBreadRoles($id),    
+            'funcionalidades' => $funcionalidades
         ]);
     }
     public function validarData(Request $request){
         $validatedData = $request->validate([
             'nombre'             => 'required|min:1|max:64',
             'descripcion'           => 'required|max:1024',
+            'url'           => 'required|max:1024',
         ]);
         return $validatedData;
     }
@@ -111,7 +107,7 @@ class SoftwareController extends Controller
         //Obtengo todos las funcionalidades
         $funcionalidades = Funcionalidad::select('nombre','id')->get();
         //Busco el software
-        $software= Software::select('nombre','id','descripcion','imagen')->where("id","=",$id)->first();
+        $software= Software::select('nombre','id','descripcion','imagen','url')->where("id","=",$id)->first();
         //Busco el lenguaje seleccionado
         $lenguajeSeleccionado= LenguajeSoftware::select('lenguaje_id')->where("software_id","=",$id)->get();
         $funcionalidadSeleccionado= FuncionalidadSoftware::select('funcionalidad_id')->where("software_id","=",$id)->get();
@@ -145,9 +141,9 @@ class SoftwareController extends Controller
      */
     public function destroy($id)
     {
-        $note = Notes::find($id);
-        if($note){
-            $note->delete();
+        $software = Software::find($id);
+        if($software){
+            $software->delete();
         }
         return response()->json( ['status' => 'success'] );
     }
@@ -158,7 +154,8 @@ class SoftwareController extends Controller
                 'imagen' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             ]);
             $software = Software::find($id);
-            Storage::delete("/public/".$software->imagen);      
+            Storage::disk('public')->makeDirectory('imagenes_software',0777);
+            Storage::delete($software->imagen);      
             $path = storage_path('public/imagenes_software/');
          
             $image_path = Storage::disk('public')->put('imagenes_software', $request->file('imagen'));

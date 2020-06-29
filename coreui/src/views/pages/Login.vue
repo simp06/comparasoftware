@@ -9,10 +9,10 @@
                 <h1>Login</h1>
                 <p class="text-muted">Sign In to your account</p>
                 <CInput
-                  v-model="email"
+                  v-model="name"
                   prependHtml="<i class='cui-user'></i>"
                   placeholder="Username"
-                  autocomplete="username email"
+                  autocomplete="username name"
                 >
                   <template #prepend-content><CIcon name="cil-user"/></template>
                 </CInput>
@@ -66,7 +66,7 @@ import axios from "axios";
       name: 'Login',
       data() {
         return {
-          email: '',
+          name: '',
           password: '',
           showMessage: false,
           message: '',
@@ -79,13 +79,13 @@ import axios from "axios";
         login() {
           let self = this;
           axios.post(  '/api/login', {
-            email: self.email,
+            name: self.name,
             password: self.password,
           }).then(function (response) {
-            self.email = '';
+            self.name = '';
             self.password = '';
             localStorage.setItem("api_token", response.data.access_token);
-            self.$router.push({ path: 'notes' });
+            self.$router.push({ path: 'software' });
           })
           .catch(function (error) {
             self.message = 'Incorrect E-mail or password';

@@ -122,40 +122,10 @@ function configRoutes () {
   return [
     {
       path: '/',
-      redirect: '/dashboard',
+      redirect: '/software',
       name: 'Home',
       component: TheContainer,
       children: [
-        {
-          path: 'media',
-          name: 'Media',
-          component: Media
-        },
-        {
-          path: 'dashboard',
-          name: 'Dashboard',
-          component: Dashboard
-        },
-        {
-          path: 'colors',
-          name: 'Colors',
-          component: Colors
-        },
-        {
-          path: 'typography',
-          name: 'Typography',
-          component: Typography
-        },
-        {
-          path: 'charts',
-          name: 'Charts',
-          component: Charts
-        },
-        {
-          path: 'widgets',
-          name: 'Widgets',
-          component: Widgets
-        },
         {
           path: 'menu',
           meta: { label: 'Menu'},
@@ -225,6 +195,37 @@ function configRoutes () {
           ]
         },
         {
+          path: 'software',
+          meta: { label: 'Softwares'},
+          component: {
+            render (c) { return c('router-view') }
+          },
+          children: [
+            {
+              path: '',
+              component: Softwares,
+            },
+            {
+              path: 'create',
+              meta: { label: 'Create Sotware' },
+              name: 'Create Software',
+              component: CreateSoftware
+            },
+            {
+              path: ':id',
+              meta: { label: 'Software details'},
+              name: 'Software',
+              component: Software,
+            },
+            {
+              path: ':id/edit',
+              meta: { label: 'Edit Software' },
+              name: 'Edit Software',
+              component: EditSoftware
+            },
+          ]
+        },
+        {
           path: 'users',
           meta: { label: 'Users'},
           component: {
@@ -280,37 +281,7 @@ function configRoutes () {
             },
           ]
         },
-        {
-          path: 'software',
-          meta: { label: 'Softwares'},
-          component: {
-            render (c) { return c('router-view') }
-          },
-          children: [
-            {
-              path: '',
-              component: Softwares,
-            },
-            {
-              path: 'create',
-              meta: { label: 'Create Sotware' },
-              name: 'Create Software',
-              component: CreateSoftware
-            },
-            {
-              path: ':id',
-              meta: { label: 'Software details'},
-              name: 'Software',
-              component: Software,
-            },
-            {
-              path: ':id/edit',
-              meta: { label: 'Edit Software' },
-              name: 'Edit Software',
-              component: EditSoftware
-            },
-          ]
-        },
+        
         {
           path: 'roles',
           meta: { label: 'Roles'},

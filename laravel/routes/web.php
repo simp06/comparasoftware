@@ -10,10 +10,10 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/{any}', function () {
+Route::get('/compara', 'ComparaController@index')->name('home');
+Route::get('/admin', function () {
     return view('coreui.homepage');
-})->where('any', '.*');
+});
 
 //Auth::routes();
 //Route::get('/home', 'HomeController@index')->name('home');

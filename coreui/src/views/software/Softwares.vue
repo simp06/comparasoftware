@@ -4,7 +4,7 @@
       <transition name="slide">
       <CCard>
         <CCardBody>
-            <CButton color="primary" @click="createNote()">Create Note</CButton>
+            <CButton color="primary" @click="createSoftware()">Crear  Software</CButton>
             <CAlert
               :show.sync="dismissCountDown"
               color="primary"
@@ -49,19 +49,15 @@
                   <strong>{{item.note_type}}</strong>
                 </td>
               </template>
-              <template #show="{item}">
+            
+              <template #editar="{item}">
                 <td>
-                  <CButton color="primary" @click="showNote( item.id )">Show</CButton>
+                  <CButton color="primary" @click="editSoftware( item.id )">Editar</CButton>
                 </td>
               </template>
-              <template #edit="{item}">
+              <template #borrar="{item}">
                 <td>
-                  <CButton color="primary" @click="editNote( item.id )">Edit</CButton>
-                </td>
-              </template>
-              <template #delete="{item}">
-                <td>
-                  <CButton v-if="you!=item.id" color="danger" @click="deleteNote( item.id )">Delete</CButton>
+                  <CButton v-if="you!=item.id" color="danger" @click="deleteSoftware( item.id )">Borrar</CButton>
                 </td>
               </template>
             </CDataTable>
@@ -80,20 +76,8 @@ export default {
   data: () => {
     return {
       items: [],
-      /*
-      fields: [
-        {key: 'author'},
-        {key: 'title'},
-        {key: 'content'},
-        {key: 'applies_to_date'},
-        {key: 'status'},
-        {key: 'note_type'},
-        {key: 'show'},
-        {key: 'edit'},
-        {key: 'delete'}
-      ],
-      */
-      fields: ['nombre', 'descripcion', 'show', 'edit', 'delete'],
+     
+      fields: ['nombre', 'descripcion',  'editar', 'borrar'],
       currentPage: 1,
       perPage: 5,
       totalRows: 0,
@@ -121,18 +105,18 @@ export default {
       const noteLink = this.noteLink( id );
       this.$router.push({path: noteLink});
     },
-    editNote ( id ) {
+    editSoftware ( id ) {
       const editLink = this.editLink( id );
       this.$router.push({path: editLink});
     },
-    deleteNote ( id ) {
+    deleteSoftware ( id ) {
       let self = this;
       let noteId = id;
       axios.post(  '/api/software/' + id + '?token=' + localStorage.getItem("api_token"), {
         _method: 'DELETE'
       })
       .then(function (response) {
-          self.message = 'Successfully deleted software.';
+          self.message = 'Registro borrado exitosamente.';
           self.showAlert();
           self.getSoftware();
       }).catch(function (error) {
@@ -140,7 +124,7 @@ export default {
         self.$router.push({ path: '/login' });
       });
     },
-    createNote () {
+    createSoftware () {
       this.$router.push({path: 'software/create'});
     },
     countDownChanged (dismissCountDown) {

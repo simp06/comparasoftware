@@ -8,7 +8,7 @@ class Software extends Model
 {
     use SoftDeletes;
     protected $table = 'software';
-    protected $fillable = ['nombre', 'descripcion','imagen'];
+    protected $fillable = ['nombre', 'descripcion','imagen','url'];
 
     public function lenguaje()
     {

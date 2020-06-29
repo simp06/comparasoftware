@@ -15,6 +15,7 @@
           </CAlert>
              <CInput label="Nombre" type="text" placeholder="Nombre" v-model="software.nombre"></CInput>
             <CInput label="Descripcion" type="text" placeholder="Descripcion" v-model="software.descripcion"></CInput>
+            <CInput label="Url" type="text" placeholder="Url" v-model="software.url"></CInput>
                <h4>Asignar Lenguajes:</h4>
                <CInputCheckbox
                 v-for="lenguaje in lenguajes"
@@ -39,18 +40,19 @@
                 v-on:change="onFileChange"
                 placeholder="NuevaImagen"
             />
-            <div class="c-avatar">
+           
             <img
               label="Preview"
               v-if="software.imagen" :src="software.imagen"
               class="c-avatar-img "
             />
-          </div>
+          
           <CButton color="primary" @click="update()">Save</CButton>
           <CButton color="primary" @click="goBack">Back</CButton>
         </CCardBody>
       </CCard>
     </CCol>
+    
   </CRow>
 </template>
 
@@ -71,7 +73,8 @@ export default {
           descripcion: '',
           imagen:'',
           lenguaje:[],
-          funcionalidad:[]
+          funcionalidad:[],
+          url:''
         },
         lenguajesArray: [],
         lenguajes: [],
@@ -134,7 +137,7 @@ export default {
     },
     update() {
         let self = this;
-        axios.defaults.headers.post['Content-Type'] = 'multipart/form-data';
+      
         axios.post(  '/api/software/' + self.$route.params.id + '?token=' + localStorage.getItem("api_token"),
        // Paso las variables a un objeto
        {
@@ -144,7 +147,8 @@ export default {
             descripcion:          self.software.descripcion,
             imagen:          self.software.imagen,
             lenguaje:      self.software.lenguaje,
-            funcionalidad:      self.software.funcionalidad
+            funcionalidad:      self.software.funcionalidad,
+            url:self.software.url
         })
         .then(function (response) {
           //Despues de actualizar los registros , subo la imagen ,dentro de la funcion está el id 
@@ -218,7 +222,6 @@ export default {
         }
            
     }).catch(function (error) {
-        console.log(error);
         self.$router.push({ path: '/login' });
     });
   }
