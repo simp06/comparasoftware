@@ -9,6 +9,9 @@ use Illuminate\Support\Facades\Storage;
 use App\Http\Controllers\File;
 use App\Models\Lenguaje;
 use App\Models\LenguajeSoftware;
+use App\Models\Funcionalidad;
+use App\Models\FuncionalidadSoftware;
+
 class SoftwareController extends Controller
 {
     
@@ -45,9 +48,10 @@ class SoftwareController extends Controller
         //Selec
         //Obtengo todos los lenguajes
         $lenguajes = Lenguaje::all()->pluck('nombre', 'id');
-        
+        $funcionalidades = Funcionalidad::all()->pluck('nombre', 'id');
         return response()->json([
             'lenguajes' => $lenguajes,
+            'funcionalidades' => $funcionalidades,
             #'lenguaje' => Form::find($id),
             #'formFields' => FormField::where('form_id', '=', $id)->get(),
             #'options' => $formService->getFormOptions(),
@@ -75,6 +79,8 @@ class SoftwareController extends Controller
         $software= Software::create($request->all());
         //Guardo los lenguajes y los sincronizo con el input de lenguaje 
         $software->lenguaje()->sync($request->input('lenguaje', []));
+        //Guardo las funcionalidades y los sincronizo con el input de lenguaje 
+        $software->funcionalidad()->sync($request->input('funcionalidad', []));
         //Devuelvo el id del software para luego hacer la subida de imagen 
         return response()->json( ['status' => 'success','id'=>$software->id] );
     }
@@ -102,11 +108,14 @@ class SoftwareController extends Controller
     {
         //Obtengo todos los lenguajes
         $lenguajes = Lenguaje::select('nombre','id')->get();
+        //Obtengo todos las funcionalidades
+        $funcionalidades = Funcionalidad::select('nombre','id')->get();
         //Busco el software
         $software= Software::select('nombre','id','descripcion','imagen')->where("id","=",$id)->first();
         //Busco el lenguaje seleccionado
         $lenguajeSeleccionado= LenguajeSoftware::select('lenguaje_id')->where("software_id","=",$id)->get();
-        return response()->json( [ 'software' => $software ,"lenguajes"=>$lenguajes,"lenguajeSeleccionado"=>$lenguajeSeleccionado] );
+        $funcionalidadSeleccionado= FuncionalidadSoftware::select('funcionalidad_id')->where("software_id","=",$id)->get();
+        return response()->json( [ 'software' => $software ,"lenguajes"=>$lenguajes,"lenguajeSeleccionado"=>$lenguajeSeleccionado,"funcionalidadSeleccionado"=>$funcionalidadSeleccionado,"funcionalidades"=>$funcionalidades] );
     }
 
     /**
@@ -124,6 +133,7 @@ class SoftwareController extends Controller
          //Guardo todo al igual que en el store
         $software->update($request->all());
         $software->lenguaje()->sync($request->input('lenguaje', []));
+        $software->funcionalidad()->sync($request->input('funcionalidad', []));
         return response()->json( ['status' => 'success'] );
     }
 

@@ -15,4 +15,9 @@ class Software extends Model
         return $this->belongsToMany(Lenguaje::class);
 
     }
+    
+    public function funcionalidad()
+    {
+        return $this->belongsToMany(funcionalidad::class);
+    }
 }
