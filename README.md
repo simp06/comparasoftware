@@ -18,12 +18,9 @@ $ composer install
 $ npm install
 ```
 
-### If you choice to use SQLite
+### Configuracion de base de datos
 
-``` bash
 
-# create database
-```
 Copiar archivo  ".env.example", cambiar el nombre a  ".env".
 Then in file ".env" replace this database configuration:
 * DB_CONNECTION=mysql
@@ -34,7 +31,7 @@ Then in file ".env" replace this database configuration:
 * DB_PASSWORD=
 
 
-### Next step
+### Siguiente paso 
 
 ``` bash
 # en el directorio laravel 
@@ -62,24 +59,23 @@ $ npm install
 # Regresar al directorio laravel
 $ cd ../laravel
 
-# generate mixing
+# generar mixing
 $ npm run dev
 
-# and repeat generate mixing
+# y repetir el mixing
 $ npm run dev
 ```
 
-## Usage
+## Ejecutar laravel
 
 ``` bash
 # start local server
 $ php artisan serve
 
 ```
-
-Open your browser with address: [localhost:8000](localhost:8000)  
-Click "Login" on sidebar menu and log in with credentials:
-
+## Ejecutar Admin
+Abrir localhost direccion: [localhost:8000/admin](localhost:8000/admin)  
+ 
 * Username : admin
 * Password: password
 
