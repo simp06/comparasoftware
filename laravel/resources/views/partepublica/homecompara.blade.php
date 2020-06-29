@@ -19,7 +19,7 @@
 	<meta itemprop="numberOfItems" content="">
 	@foreach($softwares as $key => $software)
 	
-<li class="list-item-new software-{{$software->id}}" data-mid="18233" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem" data-sf="">
+<li class="list-item-new software-{{$software->id}}" data-mid="18233" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem" data-sf_lenguaje="{{$software->lenguaje}}" data-sf_funcionalidad="{{$software->funcionalidad}}">
 		<meta itemprop="position" content="0">
 											<span class="new-verified-badge">
 			<img src="https://dev.comparasoftware.com/platform/images/verificado-green.png" alt="Verificado">

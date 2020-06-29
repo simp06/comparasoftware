@@ -15,7 +15,7 @@
           </CAlert>
             <CInput label="Nombre" type="text" placeholder="Nombre" v-model="software.nombre"></CInput>
             <CInput label="Descripcion" type="text" placeholder="Descripcion" v-model="software.descripcion"></CInput>
-            <CInput label="Url del sitio" type="text" placeholder="Sitio" v-model="software.url"></CInput>
+            <CInput label="Url del sitio(colocar direccion compla con http://)" type="text" placeholder="Sitio" v-model="software.url"></CInput>
              <h4>Asignar Lenguajes:</h4>
               <CInputCheckbox
                 v-for="(lenguaje,index) in lenguajes"

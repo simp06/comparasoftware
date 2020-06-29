@@ -185,526 +185,83 @@
 					<div class="row">
 						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 order-md-2 order-lg-1">
 							<aside id="cartegory-sidebar-listing" class="sidebar">
-	<div class="widget">
-		<div id="filter-card" class="card">
-			<div class="card-header"><h5 class="card-title">front.title_search_filters</h5></div>
-									<ul class="feature-box">
-				<li>
-					<a href="#feature-childs-1" data-toggle="collapse">
-						<i class="fa lenguage"></i> Lenguage
-					</a>
-					<ul id="feature-childs-1" class="feature-items collapse multi-collapse ">
-												<li>
-							<div class="custom-control custom-checkbox custom-control-solid filter">
-								<input class="custom-control-input filter-value" id="filter-cb-2" type="checkbox" name="" value="2" />
-								<label class="custom-control-label filter" for="filter-cb-2">Español</label>
-							</div>
-						</li>
-												<li>
-							<div class="custom-control custom-checkbox custom-control-solid filter">
-								<input class="custom-control-input filter-value" id="filter-cb-3" type="checkbox" name="" value="3" />
-								<label class="custom-control-label filter" for="filter-cb-3">Ingles</label>
-							</div>
-						</li>
-												<li>
-							<div class="custom-control custom-checkbox custom-control-solid filter">
-								<input class="custom-control-input filter-value" id="filter-cb-4" type="checkbox" name="" value="4" />
-								<label class="custom-control-label filter" for="filter-cb-4">Portugues</label>
-							</div>
-						</li>
-											</ul>
-				</li>
-			</ul>
-									<ul class="feature-box">
-				<li>
-					<a href="#feature-childs-5" data-toggle="collapse">
-						<i class="fa modelo-de-precios"></i> Modelo de Precios
-					</a>
-					<ul id="feature-childs-5" class="feature-items collapse multi-collapse show">
-												<li>
-							<div class="custom-control custom-checkbox custom-control-solid filter">
-								<input class="custom-control-input filter-value" id="filter-cb-6" type="checkbox" name="" value="6" />
-								<label class="custom-control-label filter" for="filter-cb-6">Prueba Gratuita</label>
-							</div>
-						</li>
-												<li>
-							<div class="custom-control custom-checkbox custom-control-solid filter">
-								<input class="custom-control-input filter-value" id="filter-cb-7" type="checkbox" name="" value="7" />
-								<label class="custom-control-label filter" for="filter-cb-7">Versión Gratuita</label>
-							</div>
-						</li>
-												<li>
-							<div class="custom-control custom-checkbox custom-control-solid filter">
-								<input class="custom-control-input filter-value" id="filter-cb-8" type="checkbox" name="" value="8" />
-								<label class="custom-control-label filter" for="filter-cb-8">Pago Mensual</label>
-							</div>
-						</li>
-												<li>
-							<div class="custom-control custom-checkbox custom-control-solid filter">
-								<input class="custom-control-input filter-value" id="filter-cb-9" type="checkbox" name="" value="9" />
-								<label class="custom-control-label filter" for="filter-cb-9">Pago anual</label>
-							</div>
-						</li>
-												<li>
-							<div class="custom-control custom-checkbox custom-control-solid filter">
-								<input class="custom-control-input filter-value" id="filter-cb-10" type="checkbox" name="" value="10" />
-								<label class="custom-control-label filter" for="filter-cb-10">Pago de única vez</label>
-							</div>
-						</li>
-											</ul>
-				</li>
-			</ul>
-									<ul class="feature-box">
-				<li>
-					<a href="#feature-childs-11" data-toggle="collapse">
-						<i class="fa despliegue"></i> Despliegue
-					</a>
-					<ul id="feature-childs-11" class="feature-items collapse multi-collapse ">
-												<li>
-							<div class="custom-control custom-checkbox custom-control-solid filter">
-								<input class="custom-control-input filter-value" id="filter-cb-12" type="checkbox" name="" value="12" />
-								<label class="custom-control-label filter" for="filter-cb-12">Nube, SaaS, Web</label>
-							</div>
-						</li>
-												<li>
-							<div class="custom-control custom-checkbox custom-control-solid filter">
-								<input class="custom-control-input filter-value" id="filter-cb-13" type="checkbox" name="" value="13" />
-								<label class="custom-control-label filter" for="filter-cb-13">Instalado - Windows</label>
-							</div>
-						</li>
-												<li>
-							<div class="custom-control custom-checkbox custom-control-solid filter">
-								<input class="custom-control-input filter-value" id="filter-cb-14" type="checkbox" name="" value="14" />
-								<label class="custom-control-label filter" for="filter-cb-14">Instalado - Mac</label>
-							</div>
-						</li>
-												<li>
-							<div class="custom-control custom-checkbox custom-control-solid filter">
-								<input class="custom-control-input filter-value" id="filter-cb-15" type="checkbox" name="" value="15" />
-								<label class="custom-control-label filter" for="filter-cb-15">Instalado - Linux</label>
-							</div>
-						</li>
-												<li>
-							<div class="custom-control custom-checkbox custom-control-solid filter">
-								<input class="custom-control-input filter-value" id="filter-cb-16" type="checkbox" name="" value="16" />
-								<label class="custom-control-label filter" for="filter-cb-16">Dispositivo móvil - iOS Nativo</label>
-							</div>
-						</li>
-												<li>
-							<div class="custom-control custom-checkbox custom-control-solid filter">
-								<input class="custom-control-input filter-value" id="filter-cb-17" type="checkbox" name="" value="17" />
-								<label class="custom-control-label filter" for="filter-cb-17">Dispositivo móvil - Android Nativo</label>
-							</div>
-						</li>
-											</ul>
-				</li>
-			</ul>
-									<ul class="feature-box">
-				<li>
-					<a href="#feature-childs-18" data-toggle="collapse">
-						<i class="fa ind--strias"></i> Indústrias
-					</a>
-					<ul id="feature-childs-18" class="feature-items collapse multi-collapse ">
-												<li>
-							<div class="custom-control custom-checkbox custom-control-solid filter">
-								<input class="custom-control-input filter-value" id="filter-cb-19" type="checkbox" name="" value="19" />
-								<label class="custom-control-label filter" for="filter-cb-19">Publicidad</label>
-							</div>
-						</li>
-												<li>
-							<div class="custom-control custom-checkbox custom-control-solid filter">
-								<input class="custom-control-input filter-value" id="filter-cb-20" type="checkbox" name="" value="20" />
-								<label class="custom-control-label filter" for="filter-cb-20">Agricultura</label>
-							</div>
-						</li>
-												<li>
-							<div class="custom-control custom-checkbox custom-control-solid filter">
-								<input class="custom-control-input filter-value" id="filter-cb-21" type="checkbox" name="" value="21" />
-								<label class="custom-control-label filter" for="filter-cb-21">concesionario de automóviles</label>
-							</div>
-						</li>
-												<li>
-							<div class="custom-control custom-checkbox custom-control-solid filter">
-								<input class="custom-control-input filter-value" id="filter-cb-22" type="checkbox" name="" value="22" />
-								<label class="custom-control-label filter" for="filter-cb-22">Bancario</label>
-							</div>
-						</li>
-												<li>
-							<div class="custom-control custom-checkbox custom-control-solid filter">
-								<input class="custom-control-input filter-value" id="filter-cb-23" type="checkbox" name="" value="23" />
-								<label class="custom-control-label filter" for="filter-cb-23">Construcción</label>
-							</div>
-						</li>
-												<li>
-							<div class="custom-control custom-checkbox custom-control-solid filter">
-								<input class="custom-control-input filter-value" id="filter-cb-24" type="checkbox" name="" value="24" />
-								<label class="custom-control-label filter" for="filter-cb-24">Consultante</label>
-							</div>
-						</li>
-												<li>
-							<div class="custom-control custom-checkbox custom-control-solid filter">
-								<input class="custom-control-input filter-value" id="filter-cb-25" type="checkbox" name="" value="25" />
-								<label class="custom-control-label filter" for="filter-cb-25">Distribución</label>
-							</div>
-						</li>
-												<li>
-							<div class="custom-control custom-checkbox custom-control-solid filter">
-								<input class="custom-control-input filter-value" id="filter-cb-26" type="checkbox" name="" value="26" />
-								<label class="custom-control-label filter" for="filter-cb-26">Educación</label>
-							</div>
-						</li>
-												<li>
-							<div class="custom-control custom-checkbox custom-control-solid filter">
-								<input class="custom-control-input filter-value" id="filter-cb-27" type="checkbox" name="" value="27" />
-								<label class="custom-control-label filter" for="filter-cb-27">Energía</label>
-							</div>
-						</li>
-												<li>
-							<div class="custom-control custom-checkbox custom-control-solid filter">
-								<input class="custom-control-input filter-value" id="filter-cb-28" type="checkbox" name="" value="28" />
-								<label class="custom-control-label filter" for="filter-cb-28">Ingenieria</label>
-							</div>
-						</li>
-												<li>
-							<div class="custom-control custom-checkbox custom-control-solid filter">
-								<input class="custom-control-input filter-value" id="filter-cb-29" type="checkbox" name="" value="29" />
-								<label class="custom-control-label filter" for="filter-cb-29">Bebida alimenticia</label>
-							</div>
-						</li>
-												<li>
-							<div class="custom-control custom-checkbox custom-control-solid filter">
-								<input class="custom-control-input filter-value" id="filter-cb-30" type="checkbox" name="" value="30" />
-								<label class="custom-control-label filter" for="filter-cb-30">Salud / Medicina</label>
-							</div>
-						</li>
-												<li>
-							<div class="custom-control custom-checkbox custom-control-solid filter">
-								<input class="custom-control-input filter-value" id="filter-cb-31" type="checkbox" name="" value="31" />
-								<label class="custom-control-label filter" for="filter-cb-31">Hostelería / Viajes</label>
-							</div>
-						</li>
-												<li>
-							<div class="custom-control custom-checkbox custom-control-solid filter">
-								<input class="custom-control-input filter-value" id="filter-cb-32" type="checkbox" name="" value="32" />
-								<label class="custom-control-label filter" for="filter-cb-32">Seguro</label>
-							</div>
-						</li>
-												<li>
-							<div class="custom-control custom-checkbox custom-control-solid filter">
-								<input class="custom-control-input filter-value" id="filter-cb-33" type="checkbox" name="" value="33" />
-								<label class="custom-control-label filter" for="filter-cb-33">Legal</label>
-							</div>
-						</li>
-												<li>
-							<div class="custom-control custom-checkbox custom-control-solid filter">
-								<input class="custom-control-input filter-value" id="filter-cb-34" type="checkbox" name="" value="34" />
-								<label class="custom-control-label filter" for="filter-cb-34">Servicio de Mantenimiento / Campo</label>
-							</div>
-						</li>
-												<li>
-							<div class="custom-control custom-checkbox custom-control-solid filter">
-								<input class="custom-control-input filter-value" id="filter-cb-35" type="checkbox" name="" value="35" />
-								<label class="custom-control-label filter" for="filter-cb-35">Fabricación</label>
-							</div>
-						</li>
-												<li>
-							<div class="custom-control custom-checkbox custom-control-solid filter">
-								<input class="custom-control-input filter-value" id="filter-cb-36" type="checkbox" name="" value="36" />
-								<label class="custom-control-label filter" for="filter-cb-36">Medios de comunicación</label>
-							</div>
-						</li>
-												<li>
-							<div class="custom-control custom-checkbox custom-control-solid filter">
-								<input class="custom-control-input filter-value" id="filter-cb-37" type="checkbox" name="" value="37" />
-								<label class="custom-control-label filter" for="filter-cb-37">Hipoteca</label>
-							</div>
-						</li>
-												<li>
-							<div class="custom-control custom-checkbox custom-control-solid filter">
-								<input class="custom-control-input filter-value" id="filter-cb-38" type="checkbox" name="" value="38" />
-								<label class="custom-control-label filter" for="filter-cb-38">Sin ánimo de lucro</label>
-							</div>
-						</li>
-												<li>
-							<div class="custom-control custom-checkbox custom-control-solid filter">
-								<input class="custom-control-input filter-value" id="filter-cb-39" type="checkbox" name="" value="39" />
-								<label class="custom-control-label filter" for="filter-cb-39">productos farmacéuticos</label>
-							</div>
-						</li>
-												<li>
-							<div class="custom-control custom-checkbox custom-control-solid filter">
-								<input class="custom-control-input filter-value" id="filter-cb-40" type="checkbox" name="" value="40" />
-								<label class="custom-control-label filter" for="filter-cb-40">Propiedad administrativa</label>
-							</div>
-						</li>
-												<li>
-							<div class="custom-control custom-checkbox custom-control-solid filter">
-								<input class="custom-control-input filter-value" id="filter-cb-41" type="checkbox" name="" value="41" />
-								<label class="custom-control-label filter" for="filter-cb-41">Sector público</label>
-							</div>
-						</li>
-												<li>
-							<div class="custom-control custom-checkbox custom-control-solid filter">
-								<input class="custom-control-input filter-value" id="filter-cb-42" type="checkbox" name="" value="42" />
-								<label class="custom-control-label filter" for="filter-cb-42">Bienes raíces</label>
-							</div>
-						</li>
-												<li>
-							<div class="custom-control custom-checkbox custom-control-solid filter">
-								<input class="custom-control-input filter-value" id="filter-cb-43" type="checkbox" name="" value="43" />
-								<label class="custom-control-label filter" for="filter-cb-43">Al por menor</label>
-							</div>
-						</li>
-												<li>
-							<div class="custom-control custom-checkbox custom-control-solid filter">
-								<input class="custom-control-input filter-value" id="filter-cb-44" type="checkbox" name="" value="44" />
-								<label class="custom-control-label filter" for="filter-cb-44">Software / TI</label>
-							</div>
-						</li>
-												<li>
-							<div class="custom-control custom-checkbox custom-control-solid filter">
-								<input class="custom-control-input filter-value" id="filter-cb-45" type="checkbox" name="" value="45" />
-								<label class="custom-control-label filter" for="filter-cb-45">Telecomunicaciones</label>
-							</div>
-						</li>
-												<li>
-							<div class="custom-control custom-checkbox custom-control-solid filter">
-								<input class="custom-control-input filter-value" id="filter-cb-46" type="checkbox" name="" value="46" />
-								<label class="custom-control-label filter" for="filter-cb-46">Transporte</label>
-							</div>
-						</li>
-												<li>
-							<div class="custom-control custom-checkbox custom-control-solid filter">
-								<input class="custom-control-input filter-value" id="filter-cb-47" type="checkbox" name="" value="47" />
-								<label class="custom-control-label filter" for="filter-cb-47">Utilidades</label>
-							</div>
-						</li>
-												<li>
-							<div class="custom-control custom-checkbox custom-control-solid filter">
-								<input class="custom-control-input filter-value" id="filter-cb-48" type="checkbox" name="" value="48" />
-								<label class="custom-control-label filter" for="filter-cb-48">Otros servicios</label>
-							</div>
-						</li>
-											</ul>
-				</li>
-			</ul>
-									<ul class="feature-box">
-				<li>
-					<a href="#feature-childs-49" data-toggle="collapse">
-						<i class="fa paises"></i> Paises
-					</a>
-					<ul id="feature-childs-49" class="feature-items collapse multi-collapse ">
-												<li>
-							<div class="custom-control custom-checkbox custom-control-solid filter">
-								<input class="custom-control-input filter-value" id="filter-cb-50" type="checkbox" name="" value="50" />
-								<label class="custom-control-label filter" for="filter-cb-50">México</label>
-							</div>
-						</li>
-												<li>
-							<div class="custom-control custom-checkbox custom-control-solid filter">
-								<input class="custom-control-input filter-value" id="filter-cb-51" type="checkbox" name="" value="51" />
-								<label class="custom-control-label filter" for="filter-cb-51">España</label>
-							</div>
-						</li>
-												<li>
-							<div class="custom-control custom-checkbox custom-control-solid filter">
-								<input class="custom-control-input filter-value" id="filter-cb-52" type="checkbox" name="" value="52" />
-								<label class="custom-control-label filter" for="filter-cb-52">Colombia</label>
-							</div>
-						</li>
-												<li>
-							<div class="custom-control custom-checkbox custom-control-solid filter">
-								<input class="custom-control-input filter-value" id="filter-cb-53" type="checkbox" name="" value="53" />
-								<label class="custom-control-label filter" for="filter-cb-53">Chile</label>
-							</div>
-						</li>
-												<li>
-							<div class="custom-control custom-checkbox custom-control-solid filter">
-								<input class="custom-control-input filter-value" id="filter-cb-54" type="checkbox" name="" value="54" />
-								<label class="custom-control-label filter" for="filter-cb-54">Argentina</label>
-							</div>
-						</li>
-												<li>
-							<div class="custom-control custom-checkbox custom-control-solid filter">
-								<input class="custom-control-input filter-value" id="filter-cb-55" type="checkbox" name="" value="55" />
-								<label class="custom-control-label filter" for="filter-cb-55">Perú</label>
-							</div>
-						</li>
-												<li>
-							<div class="custom-control custom-checkbox custom-control-solid filter">
-								<input class="custom-control-input filter-value" id="filter-cb-56" type="checkbox" name="" value="56" />
-								<label class="custom-control-label filter" for="filter-cb-56">Ecuador</label>
-							</div>
-						</li>
-												<li>
-							<div class="custom-control custom-checkbox custom-control-solid filter">
-								<input class="custom-control-input filter-value" id="filter-cb-57" type="checkbox" name="" value="57" />
-								<label class="custom-control-label filter" for="filter-cb-57">Estados Unidos</label>
-							</div>
-						</li>
-												<li>
-							<div class="custom-control custom-checkbox custom-control-solid filter">
-								<input class="custom-control-input filter-value" id="filter-cb-58" type="checkbox" name="" value="58" />
-								<label class="custom-control-label filter" for="filter-cb-58">Guatemala</label>
-							</div>
-						</li>
-												<li>
-							<div class="custom-control custom-checkbox custom-control-solid filter">
-								<input class="custom-control-input filter-value" id="filter-cb-59" type="checkbox" name="" value="59" />
-								<label class="custom-control-label filter" for="filter-cb-59">Bolivia</label>
-							</div>
-						</li>
-												<li>
-							<div class="custom-control custom-checkbox custom-control-solid filter">
-								<input class="custom-control-input filter-value" id="filter-cb-60" type="checkbox" name="" value="60" />
-								<label class="custom-control-label filter" for="filter-cb-60">Costa Rica</label>
-							</div>
-						</li>
-												<li>
-							<div class="custom-control custom-checkbox custom-control-solid filter">
-								<input class="custom-control-input filter-value" id="filter-cb-61" type="checkbox" name="" value="61" />
-								<label class="custom-control-label filter" for="filter-cb-61">República Dominicana</label>
-							</div>
-						</li>
-												<li>
-							<div class="custom-control custom-checkbox custom-control-solid filter">
-								<input class="custom-control-input filter-value" id="filter-cb-62" type="checkbox" name="" value="62" />
-								<label class="custom-control-label filter" for="filter-cb-62">Venezuela</label>
-							</div>
-						</li>
-												<li>
-							<div class="custom-control custom-checkbox custom-control-solid filter">
-								<input class="custom-control-input filter-value" id="filter-cb-63" type="checkbox" name="" value="63" />
-								<label class="custom-control-label filter" for="filter-cb-63">Panama</label>
-							</div>
-						</li>
-												<li>
-							<div class="custom-control custom-checkbox custom-control-solid filter">
-								<input class="custom-control-input filter-value" id="filter-cb-64" type="checkbox" name="" value="64" />
-								<label class="custom-control-label filter" for="filter-cb-64">El Salvador</label>
-							</div>
-						</li>
-												<li>
-							<div class="custom-control custom-checkbox custom-control-solid filter">
-								<input class="custom-control-input filter-value" id="filter-cb-65" type="checkbox" name="" value="65" />
-								<label class="custom-control-label filter" for="filter-cb-65">Honduras</label>
-							</div>
-						</li>
-												<li>
-							<div class="custom-control custom-checkbox custom-control-solid filter">
-								<input class="custom-control-input filter-value" id="filter-cb-66" type="checkbox" name="" value="66" />
-								<label class="custom-control-label filter" for="filter-cb-66">Uruguay</label>
-							</div>
-						</li>
-												<li>
-							<div class="custom-control custom-checkbox custom-control-solid filter">
-								<input class="custom-control-input filter-value" id="filter-cb-67" type="checkbox" name="" value="67" />
-								<label class="custom-control-label filter" for="filter-cb-67">Paraguay</label>
-							</div>
-						</li>
-												<li>
-							<div class="custom-control custom-checkbox custom-control-solid filter">
-								<input class="custom-control-input filter-value" id="filter-cb-68" type="checkbox" name="" value="68" />
-								<label class="custom-control-label filter" for="filter-cb-68">Nicaragua</label>
-							</div>
-						</li>
-												<li>
-							<div class="custom-control custom-checkbox custom-control-solid filter">
-								<input class="custom-control-input filter-value" id="filter-cb-69" type="checkbox" name="" value="69" />
-								<label class="custom-control-label filter" for="filter-cb-69">Puerto Rico</label>
-							</div>
-						</li>
-												<li>
-							<div class="custom-control custom-checkbox custom-control-solid filter">
-								<input class="custom-control-input filter-value" id="filter-cb-70" type="checkbox" name="" value="70" />
-								<label class="custom-control-label filter" for="filter-cb-70">Brasil</label>
-							</div>
-						</li>
-												<li>
-							<div class="custom-control custom-checkbox custom-control-solid filter">
-								<input class="custom-control-input filter-value" id="filter-cb-71" type="checkbox" name="" value="71" />
-								<label class="custom-control-label filter" for="filter-cb-71">Cuba</label>
-							</div>
-						</li>
-											</ul>
-				</li>
-			</ul>
-						<ul class="feature-box">
-				<li>
-					<a href="#feature-childs-pf" data-toggle="collapse">
-						<i class="fa category-features"></i> front.popular_features
-					</a>
-					<ul id="feature-childs-pf" class="feature-items collapse multi-collapse show">
-												<li>
-							<div class="custom-control custom-checkbox custom-control-solid filter">
-								<input class="custom-control-input filter-value" id="filter-cb-91" type="checkbox" name="" value="91" />
-								<label class="custom-control-label filter" for="filter-cb-91">Acceso Movil</label>
-							</div>
-						</li>
-												<li>
-							<div class="custom-control custom-checkbox custom-control-solid filter">
-								<input class="custom-control-input filter-value" id="filter-cb-92" type="checkbox" name="" value="92" />
-								<label class="custom-control-label filter" for="filter-cb-92">Mantenimiento Preventivo</label>
-							</div>
-						</li>
-												<li>
-							<div class="custom-control custom-checkbox custom-control-solid filter">
-								<input class="custom-control-input filter-value" id="filter-cb-93" type="checkbox" name="" value="93" />
-								<label class="custom-control-label filter" for="filter-cb-93">Mantenimiento Predictivo</label>
-							</div>
-						</li>
-												<li>
-							<div class="custom-control custom-checkbox custom-control-solid filter">
-								<input class="custom-control-input filter-value" id="filter-cb-94" type="checkbox" name="" value="94" />
-								<label class="custom-control-label filter" for="filter-cb-94">Gestión en terreno</label>
-							</div>
-						</li>
-											</ul>
-				</li>
-			</ul>
-		</div>
-	</div>
+							@include('partepublica.filtros')
 </aside>
 <script>
 (function()
 {
 	function doFilter()
 	{
-		let searchIds = [];
-		document.querySelectorAll('#filter-card .filter-value:checked').forEach((cb) => 
+		let searchIdsLenguajes = [];
+		let searchIdsFuncionalidades = [];
+		document.querySelectorAll('#feature-childs-1-lenguajes .filter-value:checked').forEach((cb) => 
 		{
-			searchIds.push(cb.value);
+			searchIdsLenguajes.push(cb.value);
 		});
-		console.log('searchIds', searchIds);
+		document.querySelectorAll('#feature-childs-pf  .filter-value:checked').forEach((cb) => 
+		{
+			searchIdsFuncionalidades.push(cb.value);
+		});
+		let mostrarSoftware= false;
+		console.log('searchIdsFuncionalidades', searchIdsFuncionalidades);
+		console.log('searchIdsLenguajes', searchIdsLenguajes);
 		document.querySelectorAll('#software-list > li').forEach( (el) => 
 		{
-			if( searchIds.length <= 0 )
+			if( searchIdsLenguajes.length <= 0  && searchIdsFuncionalidades.length <= 0)
 			{
 				el.classList.remove('d-none');
 			}
 			else
 			{
-				let sf = JSON.parse(el.dataset.sf);
-				console.log(sf);
-				let contains = false;
-				for(let sfid of searchIds)
-				{
-					console.log(sfid);
-					if( sf.indexOf(sfid) != -1 )
-					{
-						contains = true;
-						break;
+				let sf_lenguajes = JSON.parse(el.dataset.sf_lenguaje);
+				let sf_funcionalidades = JSON.parse(el.dataset.sf_funcionalidad);
+				
+				let containsLenguaje = false;
+				let containsFuncionalidades = false;
+				
+			
+		
+				for(let i=0; i<searchIdsLenguajes.length; i++){
+					//Busco que lenguajes está seleccionado 
+						let existe = sf_lenguajes.find(function(lenguaje, index) {
+						if(lenguaje.lenguaje_id == searchIdsLenguajes[i])
+							return true;
+						});
+						if( typeof existe !="undefined"){
+							//Si existe es distinto a undefined muestra el software
+							containsLenguaje = true;
+							break;   
+						}
 					}
-				}
-				if( contains )
+					for(let i=0; i<searchIdsFuncionalidades.length; i++){
+					//Busco que lenguajes está seleccionado 
+						let existe = sf_funcionalidades.find(function(funcionalidad, index) {
+						if(funcionalidad.funcionalidad_id == searchIdsFuncionalidades[i])
+							return true;
+						});
+						if( typeof existe !="undefined"){
+							//Si existe es distinto a undefined muestra el software
+							containsFuncionalidades = true;
+							break;   
+						}
+					}
+				if(  ((containsLenguaje && searchIdsLenguajes.length > 0)   && (containsFuncionalidades && searchIdsFuncionalidades.length > 0)) || ((containsLenguaje && searchIdsFuncionalidades.length == 0) || (containsFuncionalidades && searchIdsLenguajes.length == 0))  ){
 					el.classList.remove('d-none');
-				else
+				}else{
 					el.classList.add('d-none');
+				}
 			}
 			
 		});
 	}
-	document.querySelectorAll('#filter-card .filter-value').forEach( (cb) => 
+	document.querySelectorAll('#feature-childs-1-lenguajes .filter-value').forEach( (cb) => 
+	{
+		cb.addEventListener('click', function(e)
+		{
+			doFilter();	
+		});
+	});
+	document.querySelectorAll('#feature-childs-pf .filter-value').forEach( (cb) => 
 	{
 		cb.addEventListener('click', function(e)
 		{
@@ -755,144 +312,9 @@
 </section>
 		</main>
 	</div>      
-	<div id="layoutDefault_footer">
-		<footer class="footer pt-10 pb-5 mt-auto bg-light footer-light">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-3">
-						<div class="footer-brand">ComparaSoftware SPA</div>
-						<div class="mb-3">Ayudamos a empresas a tomar decisiones informadas sobre la elección de sus herramientas digitales.</div>
-						<div class="icon-list-social mb-5">
-							<a class="icon-list-social-link" target="_blank" rel="nofollow" href="https://www.instagram.com/compara.software/">
-								<i class="fa fa-instagram"></i>
-							</a>
-							<a class="icon-list-social-link" target="_blank" rel="nofollow" href="https://www.facebook.com/comparasoftware/?_rdc=2&_rdr">
-								<i class="fa fa-facebook"></i>
-							</a>
-							<a class="icon-list-social-link" target="_blank" rel="nofollow" href="https://www.linkedin.com/company/11402374/admin/">
-								<i class="fa fa-linkedin"></i>
-							</a>
-							<a class="icon-list-social-link" target="_blank" rel="nofollow" href="https://twitter.com/ComparaSoftware">
-								<i class="fa fa-twitter"></i>
-							</a>
-						</div>
-					</div>
-					<div class="col-lg-9">
-						<div class="row">
-							<div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
-								<div class="text-uppercase-expanded text-xs mb-4">Nuestra empresa</div>
-								<ul class="list-unstyled mb-0">
-									<li class="mb-2"><a href="/nuestra-empresa">Sobre Nosotros</a></li>
-									<li class="mb-2"><a href="https://blog.comparasoftware.com" target="blank">Blog</a></li>
-									<li class="mb-2"><a href="javascript:void(0);">Sitemap</a></li>
-									<li class="mb-2"><a href="https://contrataciones.comparasoftware.com/careers" rel="nofollow">Trabaja con nosotros</a></li>
-								</ul>
-							</div>
-							<div class="col-lg-4 col-md-6 mb-5 mb-md-0">
-									<div class="text-uppercase-expanded text-xs mb-4">Empresas de Software</div>
-									<ul class="list-unstyled mb-0">
-											<li class="mb-2"><a href="/nuestros-servicios">Nuestros Servicios</a></li>
-                                            <li class="mb-2"><a href="https://soporte.comparasoftware.com/zs/XfbYIK">Registrar un software</a></li>
-									        <li class="mb-2"><a href="javascript:void(0);">Iniciar sesion</a></li>
-									</ul>
-							</div>
-							<div class="col-lg-4 col-md-6">
-									<div class="text-uppercase-expanded text-xs mb-4">Contáctanos</div>
-									<div class="mb-3">
-										<p>info@comparasoftware.com</p>
-										<p style="font-size: 13px;line-height: 0;">Chile +56-2-2958-9840</p>
-										<p style="font-size: 13px;line-height: 0;">Argentina: +54-11-5279-8391</p>
-										<p style="font-size: 13px;line-height: 0;">Colombia: +57-1-58023110</p>
-										<p style="font-size: 13px;line-height: 0;">México: +52-55-8526-5801</p>
-										<p style="font-size: 13px;line-height: 0;">Perú: +51-1-6429811</p><br>
-										<p style="font-size: 13px;line-height: 0;">Perez Valenzuela, Piso 10</p>
-										<p style="font-size: 13px;line-height: 0;">Santiago -Chile </p>
-									</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<hr class="my-5" />
-				<div class="row align-items-center">
-					<div class="col-md-6 small">ComparaSoftware SPA 2020</div>
-					<div class="col-md-6 text-md-right small">
-						<a href="javascript:void(0);">Políticas de Privacidad</a>
-						&middot;
-						<a href="javascript:void(0);">Políticas de Cookies</a>
-						<a href="javascript:void(0);">Términos y Condiciones de uso</a>
-					</div>
-				</div>
-			</div>
-		</footer>
-	</div><!-- end id="layoutDefault_footer" --></div>
-<div id="comparator-bar">
-	<div class="container-fluid">
-		<div class="row no-gutters">
-			<div class="col-10 col-sm-7">
-				<div id="comparator-items" class="container-fluid"><div class="row no-gutters"></div></div>
-			</div>
-			<div class="col-2 col-sm-5">
-				<div class="mt-3">
-					<a href=" https://dev.comparasoftware.com/platform/comparador " 
-						id="btn-view-comparator" class="btn btn-secondary">
-						<i class="fa fa-check"></i>
-						<span class="text d-none d-sm-inline">Ver comparación</span>
-					</a>
-					<a href="javascript:;" class="btn-close-comparator btn">
-						<i class="fa fa-close"></i>
-						<span class="text d-none d-sm-inline">front.close_comparator_bar</span>
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- 
-	<div id="comparator-header">
-		<h3>Ver Comparación</h3>
-		<a href="javascript:;" class="btn-close-comparator"><i class="fa fa-times-circle"></i></a>
-	</div>
-	<div id="comparator-body">
-		<div class="container-fluid">
-			<div class="col">
-				
-			</div>
-		</div>
-	</div>
-	-->
-</div>
-<div id="modal-signin" class="modal fade">
-	<form class="modal-dialog" action="https://dev.comparasoftware.com/platform/login" method="post">
-		<input type="hidden" name="_token" value="hwc2av9N3232Rl7xY9shCyKxZLzzxhF9AT43qhaf">
-		<div class="modal-content">
-			<div class="modal-header">
-				<h5 class="modal-title">Sign In</h5>
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">&times;</span>
-		        </button>
-			</div>
-			<div class="modal-body">
-				<div class="form-group">
-					<label>Username</label>
-					<input type="text" name="username" value="" class="form-control" required />
-				</div>
-				<div class="form-group">
-					<label>Password</label>
-					<input type="password" name="password" value="" class="form-control" required />
-				</div>
-				<div class="form-group">
-					<label>
-						<input type="checkbox" name="remember_me" value="1" />
-						Rememeber me
-					</label>
-				</div>
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        		<button type="submit" class="btn btn-primary">Sign In</button>
-			</div>
-		</div>
-	</form>
-</div>
+
+@include("partepublica.footer")
+
 <script>
 let jg = {"baseurl":"https:\/\/dev.comparasoftware.com\/platform","csrf_token":"hwc2av9N3232Rl7xY9shCyKxZLzzxhF9AT43qhaf","route_verify_number":"https:\/\/dev.comparasoftware.com\/platform\/formbuilder\/verifynumber"};
 </script>

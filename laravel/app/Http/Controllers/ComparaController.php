@@ -12,7 +12,9 @@ class ComparaController extends Controller
 {
     //
     public function index(){
+        $lenguajes = Lenguaje::all()->pluck('nombre', 'id');
+        $funcionalidades = Funcionalidad::all()->pluck('nombre', 'id');
         $softwares = Software::with(["funcionalidad:funcionalidad_id","lenguaje:lenguaje_id"])->get();
-        return view('partepublica/homecompara',compact('softwares'));
+        return view('partepublica/homecompara',compact('softwares','lenguajes','funcionalidades'));
     }
 }
