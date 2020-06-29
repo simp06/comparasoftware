@@ -98,6 +98,8 @@ Controlador usado para la api de software
 #### ComparaController
 Controlador usado para la parte publica 
 
+### Filtros 
+Los filtros fueron creados por separados es decir existen filtros de lenguajes y de funcionalidades, no se considero como una sola entedidad
 
 
 ## Links
