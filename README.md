@@ -6,7 +6,7 @@
 
 ``` bash
 # clone el repo
-$ git clone https://github.com/coreui/coreui-free-vue-laravel-admin-template.git my-project
+$ git clone https://github.com/simp06/comparasoftware.git my-project
 
 # ir al directorio laravel
 $ cd my-project/laravel
