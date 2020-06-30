@@ -1,11 +1,11 @@
 # Crud de Items y filtros , en vue, portal de admin y  portal publico 
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 
 ## Installation
 
 ``` bash
-# clone el repo
+# clonar  el repo
 $ git clone https://github.com/simp06/comparasoftware.git my-project
 
 # ir al directorio laravel
@@ -14,7 +14,7 @@ $ cd my-project/laravel
 # instalar las dependencias de laravel
 $ composer install
 
-# instalar las dependendias de vue
+# instalar las dependencias de node , es requisito tener instalados node
 $ npm install
 ```
 
@@ -22,7 +22,7 @@ $ npm install
 
 
 Copiar archivo  ".env.example", cambiar el nombre a  ".env".
-Then in file ".env" replace this database configuration:
+
 * DB_CONNECTION=mysql
 * DB_HOST=127.0.0.1
 * DB_PORT=3306
@@ -50,7 +50,7 @@ $ php artisan migrate:refresh --seed
 #  ir a coreui
 $ cd ../coreui
 
-# install app's dependencies
+# instalar dependendias del front
 $ npm install
 
 ```
@@ -69,7 +69,7 @@ $ npm run dev
 ## Ejecutar laravel
 
 ``` bash
-# start local server
+# ejecutar el proyecto en el servidor local
 $ php artisan serve
 
 ```
@@ -99,7 +99,15 @@ Controlador usado para la api de software
 Controlador usado para la parte publica 
 
 ### Filtros 
-Los filtros fueron creados por separados es decir existen filtros de lenguajes y de funcionalidades, no se considero como una sola entedidad
+Los filtros fueron creados por separados es decir existen filtros de lenguajes y de funcionalidades, no se considero como una sola entedidad.
+
+### Templates Blade 
+  * -- views/layoutPublica
+  * -- views/partepublica
+  *  --- views/partepublica/filtros
+  *  --- views/partepublica/footer
+  *  --- views/partepublica/homecompara
+
 
 
 ## Links
